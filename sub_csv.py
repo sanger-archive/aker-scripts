@@ -61,7 +61,7 @@ class CountingColumn:
         return self.text + num
 
 def hmdmc_column(index):
-    return '17/123'
+    return '18/0001'
 
 hmdmc_column.heading = 'HMDMC'
 
