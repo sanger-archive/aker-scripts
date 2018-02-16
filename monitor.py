@@ -9,6 +9,7 @@ import ssl
 import threading
 from datetime import datetime
 from colorama import init, Fore
+
 init(autoreset=True)
 
 load_balancers = {"WIP": "dev.psd.sanger.ac.uk:9200",
@@ -55,4 +56,5 @@ def main():
             print_status(service, status)
         print("")
 
-main()
+if __name__=='__main__':
+    main()
