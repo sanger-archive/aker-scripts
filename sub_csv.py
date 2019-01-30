@@ -27,8 +27,7 @@ except ImportError:
 
 
 SKIP_KEYS = {'scientific_name'}
-DEFAULT_URL = ('https://dev.psd.sanger.ac.uk:9200/'
-                'materials_service/materials/schema')
+DEFAULT_URL = 'https://wip.aker.sanger.ac.uk/material_service/materials/schema'
 
 class WellPosColumn:
     def __init__(self, num_rows, num_cols):
