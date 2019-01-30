@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
-# Generates a string can be used for a JWT key
-import jwcrypto.jwk as jwk
-from ast import literal_eval
+"""Generate a string that can be used for a JWT key."""
 
-key = literal_eval(jwk.JWK.generate(kty='oct', size=2048).export())
+from jwcrypto.jwk import JWK
 
-print(key["k"])
-
+print(JWK.generate(kty='oct', size=2048).get_op_key())
